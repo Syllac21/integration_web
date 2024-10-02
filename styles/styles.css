@@ -1,3 +1,57 @@
+body {
+    text-align:center;
+    background:linear-gradient(141deg, #ccc 25%, #eee 40%, #ddd 55%);
+    color:#555;
+    font-family:'Roboto';
+    font-weight:300;
+    font-size:32px;
+    padding-top:40vh;
+    height:100vh;
+    overflow:hidden;
+    -webkit-backface-visibility: hidden;
+    -webkit-perspective: 1000;
+    -webkit-transform: translate3d(0,0,0);
+  }
+
+div {
+display:inline-block;
+overflow:hidden;
+white-space:nowrap;
+}
+
+div:first-of-type {    /* For increasing performance 
+    ID/Class should've been used. 
+    For a small demo 
+    it's okaish for now */
+animation: showup 7s infinite;
+}
+
+div:last-of-type span {
+    margin-left:-355px;
+    animation: slidein 7s infinite;
+}
+
+@keyframes showup {
+    0% {opacity:0;}
+    20% {opacity:1;}
+    80% {opacity:1;}
+    100% {opacity:0;}
+}
+
+@keyframes slidein {
+    0% { margin-left:-800px; }
+    20% { margin-left:-800px; }
+    35% { margin-left:0px; }
+    100% { margin-left:0px; }
+}
+
+@keyframes reveal {
+    0% {opacity:0;width:0px;}
+    20% {opacity:1;width:0px;}
+    30% {width:355px;}
+    80% {opacity:1;}
+    100% {opacity:0;width:355px;}
+}
 
 h1{
     text-decoration: overline underline;
@@ -11,21 +65,45 @@ main{
     grid-template-columns: repeat(3,1fr);
     width: 60%;
     margin: auto;
-    background-color: bisque;
+    background-color: #F5F5FA;
+    justify-items: center;
 
 }
 
 a{
-    display: block;
-    box-shadow: ;
-    border-radius: 30%;
-    text-align: center;
-    background-color: gray;
-    box-shadow: 12px 12px 2px 1px rgba(0, 0, 255, .2);
-    margin: 15px;
-    padding: 10px;
+
+    align-items: center;
+    background: #f5f5fa;
+    border: 0;
+    border-radius: 8px;
+    box-shadow: -10px -10px 30px 0 #fff,10px 10px 30px 0 #1d0dca17;
+    box-sizing: border-box;
+    color: #2a1f62;
+    cursor: pointer;
+    display: flex;
+    font-family: "Cascadia Code",Consolas,Monaco,"Andale Mono","Ubuntu Mono",monospace;
+    font-size: 1rem;
+    justify-content: center;
+    line-height: 1.5rem;
+    padding: 15px;
+    position: relative;
+    text-align: left;
+    transition: .2s;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    white-space: pre;
+    width: max-content;
+    word-break: normal;
+    word-spacing: normal;
+    margin: 5px;
 }
 
-a:hover{
-    box-shadow: 12px 12px 2px 1px rgba(103, 103, 224, 0.2);
+a:hover,
+a:focus { 
+    background: #f8f8ff;
+    box-shadow: -15px -15px 30px 0 #fff, 15px 15px 30px 0 #1d0dca17;
 }
+
+
+
