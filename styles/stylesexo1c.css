@@ -1,0 +1,17 @@
+.element{
+    height: 50px;
+}
+
+.hautBas{
+    background-color: teal;
+}
+
+nav{
+    background-color: purple;
+}
+
+main{
+    background-color: yellow;
+    margin: 10px;
+    height: 500px;
+}

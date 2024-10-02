@@ -1,0 +1,16 @@
+main{
+    width: 40%;
+    margin: auto;
+    line-height: 3em;
+}
+
+section{
+    border: thick double black;
+    padding: 5px;
+}
+h2{
+    color: red;
+    text-decoration: underline;
+    font-size: xx-large;
+    text-align: center;
+}

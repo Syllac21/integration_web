@@ -1,0 +1,37 @@
+*{
+    text-align: center;
+    
+}
+
+body{
+    width: 60%;
+    margin: auto;
+}
+header{
+    background-color: blueviolet;
+    height: 5em;
+}
+
+nav{
+    background-color: yellow;
+    height: 2em;
+}
+
+div{
+    background-color: orange;
+    height: 7em;
+}
+
+section{
+    background-color: green;
+    
+
+}
+
+article{
+    background-color: lime;
+    display: inline-block;
+    height: 150px;
+    width: 150px;
+    margin: 10px;
+}

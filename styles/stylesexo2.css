@@ -1,0 +1,52 @@
+div{
+    min-height: 50px;
+    min-width: 50px;
+}
+#main{
+    border: solid purple;
+}
+.container{
+    margin: 50px 100px 50px 100px;
+}
+
+#contmain{
+    border: solid red;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+
+#header{
+    border: solid yellow;
+    grid-column: 1/3;
+}
+
+#content{
+    border: solid green;
+    padding-top: 100px;
+}
+
+#news{
+    border: solid blue;
+}
+
+#sidebar{
+    border: solid brown;
+    grid-template-rows: 3;
+    padding-top: 40px;
+    padding-bottom: 80px;
+}
+
+.pink{
+    border: solid pink;
+    margin-top: 5px;
+}
+
+#footer{
+    border: solid aqua;
+    background-color: gray;
+}
+
+#contfoot{
+    border: solid lime;
+}
+

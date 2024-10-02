@@ -1,0 +1,32 @@
+body{
+    width: 60%;
+    background-color: grey;
+    margin: auto;
+}
+
+header{
+    color: white;
+}
+
+main{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-gap: 10px;
+}
+
+aside{
+    display: block;
+    background-color: bisque;
+    width: 10.5em;
+    height: 9em;
+    padding-top: 2px;
+    
+}
+
+img{
+    width: 10em;
+    display: block;
+    margin: auto;
+    transform: rotate(2deg);
+
+}

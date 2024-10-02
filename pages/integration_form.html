@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Intégration formulaire</title>
+    <link rel="stylesheet" href="../styles/styles_integr_form.css">
+</head>
+<body>
+    <main>
+        <!-- information perso-->
+        <section>
+            <h2>Information personnelle</h2>
+            <form action=# method="GET">
+                <ul>
+                    <li>
+                        
+                        <label for="civility">Civilité *</label>
+                        <select name="civility" id="civility">
+                            <option value="Homme">Homme</option>
+                            <option value="femme">Femme</option>
+                            <option value="autre">Autre</option>
+                        </select>
+                        
+                    </li>
+
+                    <li>
+                        <label for="name">nom *</label>
+                        <input type="text" name="name" id="name">
+                    </li>
+
+                    <li>
+                        <label for="lastname">prénom *</label>
+                        <input type="text" name="lastname" id="lastname">
+                    </li>
+
+                    <li>
+                        <label for="birthday">date de naissance *</label>
+                        <input type="text" name="birthday" id="birthday" placeholder="jj/mm/aaaa">
+                    </li>
+
+                    <li>
+                        <label for="telf">numéro de téléphone fixe</label>
+                        <input type="telf" name="telf" id="telf">
+                    </li>
+
+                    <li>
+                        <label for="telp">numéro de téléphone portable *</label>
+                        <input type="telf" name="telp" id="telp">
+                    </li>
+
+                    <li>
+                        <label for="number">numéro de rue *</label>
+                        <input type="number" name="number" id="number" min="0">
+                        <label for="street">nom de rue *</label>
+                        <input type="text" name="street" id="street">
+                    </li>
+
+                    <li>
+                        <label for="cp">Code postal *</label>
+                        <input type="text" name="cp" id="cp">
+                    </li>
+
+                    <li>
+                        <label for="town">ville *</label>
+                        <input type="text" name="town" id="town">
+                    </li>
+
+                    <li>
+                        <label for="pseudo">pseudo *</label>
+                        <input type="text" name="pseudo" id="pseudo">
+                    </li>
+
+                    <li>
+                        <label for="password">mot de passe *</label>
+                        <input type="password" name="password" id="password">
+                        <button type="submit">Soumettre</button>
+                        <input type="checkbox" name="remember" id="remember">
+                        <label for="remember">se souvenir de moi</label>
+                    </li>
+                </ul>
+            </form>
+        </section>
+
+        <!--information complémentaires-->
+        <section>
+            <h2>Informations complémentaires</h2>
+            <form action=# method="GET">
+                <article>
+                    <p>Quel est votre niveau en développement?</p>
+                    <input type="radio" name="lvl" id="beg">
+                    <label for="beg">Débutant</label>
+                    <input type="radio" name="lvl" id="int">
+                    <label for="int">Junior</label>
+                    <input type="radio" name="lvl" id="exp">
+                    <label for="exp">Expert</label>
+                </article>
+                <p>Quel est votre niveau de connaissance dans les différents langages</p>
+                <ul>
+                    <li>
+                        <label for="html">HTML/CSS</label>
+                        <input type="checkbox" name="html">
+                    </li>
+                    <li>
+                        <label for="python">Python</label>
+                        <input type="checkbox" name="python" id="python">
+                    </li>
+                    <li>
+                        <label for="php">PHP</label>
+                        <input type="checkbox" name="php" id="php">
+                    </li>
+                    <li>
+                        <label for="java">Java</label>
+                        <input type="checkbox" name="java" id="java">
+                    </li>
+                    <li>
+                        <label for="node">NodeJS</label>
+                        <input type="checkbox" name="node" id="node">
+                    </li>
+                    <li>
+                        <label for="react">ReactJS</label>
+                        <input type="checkbox" name="react" id="react">
+                    </li>
+                    <li>
+                        <label for="c">C#</label>
+                        <input type="checkbox" name="c" id="c">
+                    </li>
+                </ul>
+                <article>
+                    <label for="os">Sur quel OS travaillez-vous</label>
+                    <select name="os" id="os">
+                        <option value="Win">Windows</option>
+                        <option value="Lin">Linux</option>
+                        <option value="Mac">Mac</option>
+                    </select>
+                </article>
+                <button type="submit">envoyer</button>
+            </form>
+        </section>
+        <section>
+            <h2>Informations liées à la promotion</h2>
+            <form action=# method="GET">
+                <article>
+                    <label for="promo">Promotion beweb</label>
+                    <select name="promo" id="promo">
+                        <option value="1">option 1</option>
+                        <option value="2">option 2</option>
+                        <option value="3">option 3</option>
+                    </select>
+                    <select name="promo2" id="promo2">
+                        <option value="1">option 1</option>
+                        <option value="2">option 2</option>
+                        <option value="3">option 3</option>
+                    </select>
+                </article>
+                <article>
+                    <label for="url">Merci de nous faire parvenir notre URL TD_1</label>
+                    <input type="url" name="url" id="url">
+                </article>
+                <article>
+                    <label for="commentaire">Si vous avez des questions vous pouvez nous les laisser en commentaire ci-dessous</label>
+                    <div><textarea name="commentaire" id="commentaire" rows="5" cols="100"></textarea></div>
+                </article>
+                <button type="submit">envoyer</button>
+            </form>
+        </section>
+        <p>* champs obligatoire</p>
+    </main>
+</body>
+</html>
