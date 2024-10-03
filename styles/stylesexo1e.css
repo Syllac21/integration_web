@@ -6,8 +6,11 @@ body{
 }
 
 #haut{
-        background-color: red;
-        grid-column: 1/9;
+    background-color: red;
+    grid-column: 1/9;
+    display: flex;
+    align-items:center;
+    justify-content: center;
 }
 
 main{
@@ -18,8 +21,10 @@ main{
 
 .bord{
     background-color: blue;
-    
     grid-row: 2/10;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .centre{
@@ -27,10 +32,16 @@ main{
     columns: 1;
     grid-row: 2/9;
     border: solid white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 #bas{
     background-color: yellow;
     grid-row: 9;
     grid-column: 2/7;
+    display: flex;
+    align-items:center;
+    justify-content: center;
 }
